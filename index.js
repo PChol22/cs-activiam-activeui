@@ -2,4 +2,11 @@ const helloWorld = () => {
     console.log('Hello World !');
 };
 
-module.exports = helloWorld;
+const sayHello = (name) => {
+    return `Hello ${name} !`;
+}
+
+module.exports = {
+    helloWorld,
+    sayHello,
+};
