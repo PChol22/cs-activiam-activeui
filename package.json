@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "a test npm package",
   "main": "index.js",
-  "author": "pchol22",
+  "repository": "git@github.com:PChol22/test-npm.git",
+  "author": "Pchol22 <pierre.chollet@student-cs.fr>",
   "license": "MIT"
 }
