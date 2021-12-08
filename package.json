@@ -5,5 +5,12 @@
   "main": "index.js",
   "repository": "git@github.com:PChol22/cs-activiam-activeui.git",
   "author": "Pchol22 <pierre.chollet@student-cs.fr>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.5.2"
+  }
 }
