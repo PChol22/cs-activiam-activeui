@@ -1,9 +1,9 @@
 {
-  "name": "pchol-test-npm",
+  "name": "cs-activiam-activeui",
   "version": "1.1.1",
   "description": "a test npm package",
   "main": "index.js",
-  "repository": "git@github.com:PChol22/test-npm.git",
+  "repository": "git@github.com:PChol22/cs-activiam-activeui.git",
   "author": "Pchol22 <pierre.chollet@student-cs.fr>",
   "license": "MIT"
 }
