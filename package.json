@@ -1,6 +1,6 @@
 {
   "name": "cs-activiam-activeui",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "a test npm package",
   "repository": "git@github.com:PChol22/cs-activiam-activeui.git",
   "author": "Pchol22 <pierre.chollet@student-cs.fr>",
@@ -26,4 +26,3 @@
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts"
 }
-
