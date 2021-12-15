@@ -2,7 +2,6 @@
   "name": "cs-activiam-activeui",
   "version": "1.1.1",
   "description": "a test npm package",
-  "main": "index.js",
   "repository": "git@github.com:PChol22/cs-activiam-activeui.git",
   "author": "Pchol22 <pierre.chollet@student-cs.fr>",
   "license": "MIT",
@@ -12,5 +11,19 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.5.2"
-  }
+  },
+  "peerDependencies": {
+    "react": "^17.0.37",
+    "react-dom": "^17.0.11"
+  },
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs && yarn build:css",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "build:css": "cp src/index.css lib/esm/index.css && cp src/index.css lib/cjs/index.css"
+  },
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts"
 }
+
