@@ -3,7 +3,7 @@ import './main.css';
 
 function Square(props: { value: string; onClick: () => void }) {
   return (
-    <button className="square" onClick={props.onClick}>
+    <button data-testid="square" className="square" onClick={props.onClick}>
       {props.value}
     </button>
   );
@@ -26,7 +26,7 @@ class Board extends React.Component<IBoardProps> {
 
   render() {
     return (
-      <div>
+      <div data-testid="board">
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -115,7 +115,7 @@ class Game extends React.Component<any, IGameState> {
     }
 
     return (
-      <div className="game">
+      <div data-testid="game" className="game">
         <div className="game-board">
           <Board
             squares={current.squares}
@@ -131,9 +131,7 @@ class Game extends React.Component<any, IGameState> {
   }
 }
 
-const PluginTicTacToe = (): JSX.Element => (
-    <Game />
-);
+const PluginTicTacToe = (): JSX.Element => <Game />;
 
 // ========================================
 
