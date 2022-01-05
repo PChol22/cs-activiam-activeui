@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Game from './main';
+import Game from '../app/main';
 
 test('renders Game, checks squares and Board too', () => {
   render(<Game />);

@@ -1,22 +1,28 @@
 {
   "name": "cs-activiam-activeui",
-  "version": "3.1.0",
+  "version": "3.1.3",
   "description": "a test npm package",
   "repository": "git@github.com:PChol22/cs-activiam-activeui.git",
   "author": "Pchol22 <pierre.chollet@student-cs.fr>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
+    "@types/eslint": "^8.2.1",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.8",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
+    "babel-jest": "^27.4.6",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.27.1",
+    "jest": "^27.4.7",
     "prettier": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -34,7 +40,7 @@
     "build:clean": "rm -rf lib",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "build:css": "cp src/main.css lib/esm/main.css && cp src/main.css lib/cjs/main.css",
+    "build:css": "cp src/app/main.css lib/esm/main.css && cp src/app/main.css lib/cjs/main.css",
     "style": "npx prettier . --write && yarn run eslint ./src/**/*.tsx"
   },
   "main": "./lib/cjs/main.js",
@@ -52,7 +58,5 @@
       "last 1 safari version"
     ]
   },
-  "dependencies": {
-    "@types/eslint": "^8.2.1"
-  }
+  "dependencies": {}
 }
